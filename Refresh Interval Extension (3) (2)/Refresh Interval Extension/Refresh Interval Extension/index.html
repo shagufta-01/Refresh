@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tab Auto Refresh</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Refresh Button</h1>
+    <div class="content">
+      <table>
+        <tbody>
+          <tr class="button">
+            <td>
+              <button id="start">Start</button>
+            </td>
+            <td>
+              <button id="reset">Reset</button>
+            </td>
+            <td>
+              <button id="stop">Stop</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="count"></p>
+              <p class="interval">Refresh Interval (sec)</p>
+            </td>
+            <td style="background-color: #fff">
+              <input
+                type="number"
+                id="interval"
+                placeholder="enter time in(sec)"
+                min="1"
+                value="0"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="displayLinks">
+      <select
+        name="carlist"
+        form="carform"
+        id="linkDis"
+        class="dropdown"
+      ></select>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
